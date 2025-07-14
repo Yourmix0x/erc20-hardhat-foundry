@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@nomicfoundation/hardhat-foundry": "^1.1.4",
     "dotenv": "^17.0.1",
     "hardhat": "^2.24.3"
   },
