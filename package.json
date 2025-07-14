@@ -3,7 +3,17 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:foundry": "forge test",
+    "test:all": "npm run test && npm run test:foundry",
+    "deploy:local": "npx hardhat run scripts/deploy.ts --network localhost",
+    "deploy:sepolia": "npx hardhat run scripts/deploy.ts --network sepolia",
+    "node": "npx hardhat node",
+    "coverage": "npx hardhat coverage",
+    "typechain": "npx hardhat typechain",
+    "build": "forge build",
+    "format": "forge fmt"
   },
   "keywords": [],
   "author": "",
